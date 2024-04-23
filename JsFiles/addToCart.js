@@ -1,3 +1,5 @@
+
+import { showToast } from "./showToast";
 import { getCartProductFromLs } from "./getCartProductFromLs";
 
 export const addToCart=(event,id,stock)=>{
@@ -14,7 +16,8 @@ export const addToCart=(event,id,stock)=>{
     price=Number(price*quantity);
     quantity=Number(quantity);
 
-    let existProd=arrLocalStorageProduct.find((curr)=> curr.id===id);
+    let existProd=arrLocalStorageProduct.find(curr=> curr.id===id);
+    showToast("add",id);
 
     if(existProd){
         

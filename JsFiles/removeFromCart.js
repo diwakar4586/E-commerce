@@ -1,4 +1,6 @@
+import { getBillFromLocalStorage } from "./getBillFromLocalStorage";
 import { getCartProductFromLs } from "./getCartProductFromLs";
+import { showToast } from "./showToast";
 
 export const removeFromCart=(event,id)=>{
     console.log("id: ",id);
@@ -12,9 +14,11 @@ export const removeFromCart=(event,id)=>{
 
     // remove the div
     let removeDiv=document.getElementById(`card${id}`);
-    console.log("remove ",removeDiv);
+    // console.log("remove ",removeDiv);
     if(removeDiv){
         removeDiv.remove();
+        showToast("delete",id);
     }
+    getBillFromLocalStorage();
     return;
 }

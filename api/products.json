@@ -4,7 +4,7 @@
     "name": "Laptop",
     "category": "Computers",
     "brand": "ExampleBrand",
-    "price": 99999.99,
+    "price": 10000,
     "stock": 50,
     "description": "Powerful laptop with a quad-core i5 processor, 8GB RAM, 256GB SSD, and a 14-inch FHD display.",
     "image": "../images/lapi.png"
@@ -14,7 +14,7 @@
     "name": "Smartphone",
     "category": "Mobiles",
     "brand": "TechGadget",
-    "price": 499.99,
+    "price": 500,
     "stock": 100,
     "image": "../images/iphone.png",
     "description": "Feature-rich smartphone with a 6.2-inch screen, 12MP dual camera, 128GB storage, and a 4000mAh battery."
