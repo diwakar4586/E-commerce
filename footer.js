@@ -4,7 +4,7 @@ const footerHTML = `
       <div class="content_1">
         <img src="./images/logo.png" alt="logo" />
         <p>
-          Welcome to Thapa EcomStore, <br />
+          Welcome to Aryan EcomStore, <br />
           your ultimate destination for
           <br />
           cutting-edge gadgets!
@@ -41,7 +41,7 @@ const footerHTML = `
     </div>
     <div class="f-design">
       <div class="f-design-txt">
-        <p>Design and Code by Thapa Technical</p>
+        <p>Design and Code by Aryan Technical</p>
       </div>
     </div>
   </footer>`;
