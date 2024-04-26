@@ -2,9 +2,12 @@ const productContainer = document.querySelector('#productContainer')
 const productTemplate = document.querySelector('#productTemplate');
 const NavBarValue = document.querySelector('.fa-cart-plus');
 
+
 import { addToCart } from './addToCart.js';
 import { getCartProductFromLs } from './getCartProductFromLs.js';
 import { homeQuantityToggle } from './homeQuantityToggle.js'
+import { updateCartValue } from './updateCartValue.js';
+
 
 export const showProductContainer = (products) => {
     if (!products) {
@@ -40,7 +43,7 @@ export const showProductContainer = (products) => {
             addToCart(event,id,stock);
         })
         let AddToCartLength=getCartProductFromLs();
-        document.querySelector(".fa-cart-plus").innerText=AddToCartLength.length;
+        document.querySelector(".fa-cart-plus").textContent=AddToCartLength.length;
         console.log("size of an arr: ",AddToCartLength.length);
         productContainer.append(productClone);
         

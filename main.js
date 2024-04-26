@@ -1,9 +1,9 @@
 import './style.css'
 
 import products from './api/products.json';
-import { showProductContainer } from './JsFiles/homeProductCard';
+import { showProductContainer } from './homeProductCard';
 
-  
+
 // call the function 
 
 showProductContainer(products);

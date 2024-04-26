@@ -11,7 +11,7 @@ export const removeFromCart=(event,id)=>{
 
     // update the cart
     document.querySelector(".fa-cart-shopping").innerText=" "+ removeCart.length;
-
+   
     // remove the div
     let removeDiv=document.getElementById(`card${id}`);
     // console.log("remove ",removeDiv);

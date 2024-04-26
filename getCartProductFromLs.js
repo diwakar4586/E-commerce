@@ -4,5 +4,6 @@ export const getCartProductFromLs=()=>{
         return [];
     }
     cartProduct=JSON.parse(cartProduct);
+    
     return cartProduct;
 }
