@@ -33,10 +33,10 @@ html {
 
 /* have a look into body once after we done with rest of the styling  */
 body {
-  margin: 0 auto;
+  /* margin: 0 auto;
   padding: 0 32px;
   min-width: 320px;
-  background-color: var(--backgroundColor);
+  background-color: var(--backgroundColor); */
 }
 
 h1,
@@ -52,6 +52,7 @@ h6 {
 h1 {
   font-size: 3.2rem;
 }
+
 h2 {
   font-size: 3.2rem;
 }
@@ -74,6 +75,7 @@ li {
 a {
   color: #646cff;
   text-decoration: none;
+
   &:hover {
     color: #535bf2;
   }
@@ -92,16 +94,13 @@ a {
   padding: 9.6rem 2.4rem;
 }
 
-:is(
-    .section-extra-product,
-    .section-blog,
-    .section-policy,
-    .section-contact--homepage,
-    .section-why--choose,
-    .section-contact,
-    footer
-  )
-  .container:first-child {
+:is(.section-extra-product,
+  .section-blog,
+  .section-policy,
+  .section-contact--homepage,
+  .section-why--choose,
+  .section-contact,
+  footer) .container:first-child {
   padding: 6.4rem 0 2.4rem 0;
 }
 
@@ -194,6 +193,7 @@ textarea:focus-visible {
     -ms-transform: translateX(100%);
     -o-transform: translateX(100%);
   }
+
   20% {
     transform: translateX(0);
     opacity: 1;
@@ -202,6 +202,7 @@ textarea:focus-visible {
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -238,7 +239,8 @@ textarea:focus-visible {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.8rem; /* we override the main container padding property  */
+  padding: 1.8rem;
+  /* we override the main container padding property  */
 }
 
 .section-navbar img {
@@ -269,6 +271,7 @@ textarea:focus-visible {
       transition: all 0.3s linear;
     }
   }
+
   & li a:hover {
     color: var(--main-color);
   }
@@ -287,14 +290,12 @@ main {
   position: relative;
   background-color: #d9e9ff;
 
-  background-image: linear-gradient(
-    to top right,
-    #3d86fa,
-    #4484fb,
-    #679eff,
-    #b3d2ff,
-    #ebf3fe
-  );
+  background-image: linear-gradient(to top right,
+      #3d86fa,
+      #4484fb,
+      #679eff,
+      #b3d2ff,
+      #ebf3fe);
 }
 
 .custom-shape-divider-bottom-1696038172 {
@@ -570,15 +571,19 @@ main .section-hero {
   0% {
     background-color: #b3d0ff;
   }
+
   25% {
     background-color: #80b1ff;
   }
+
   50% {
     background-color: #4d91ff;
   }
+
   75% {
     background-color: #99c0ff;
   }
+
   100% {
     background-color: #3381ff;
   }
@@ -850,6 +855,7 @@ footer {
     font-weight: bold;
   }
 }
+
 /**** Our Home product section Ends  ****/
 
 #cartValue {
@@ -899,6 +905,7 @@ footer {
     border-right: 0.1rem solid #d8d8d8;
     border-left: 0.1rem solid #d8d8d8;
     border-radius: 0;
+
     &:last-child {
       border-bottom: 0.1rem solid #d8d8d8;
     }
@@ -908,7 +915,8 @@ footer {
     width: 100%;
     display: grid;
     grid-template-columns: 0.5fr 0.5fr 1fr 0.5fr 1fr 1fr;
-    align-items: center; /* margin: auto; */
+    align-items: center;
+    /* margin: auto; */
     gap: 3.2rem;
   }
 
@@ -997,7 +1005,7 @@ footer {
 
 /* https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
 
-@media (width <= 1380px) {
+@media (width <=1380px) {
   html {
     font-size: 56.25%;
   }
@@ -1007,19 +1015,16 @@ footer {
   }
 }
 
-@media (width <= 1220px) {
+@media (width <=1220px) {
   html {
     font-size: 54%;
   }
 
-  :is(
-      .section-about,
-      .section-blog,
-      .section-course,
-      .section-contact--homepage,
-      .section-why--choose
-    )
-    .grid {
+  :is(.section-about,
+    .section-blog,
+    .section-course,
+    .section-contact--homepage,
+    .section-why--choose) .grid {
     gap: 6.4rem;
   }
 
@@ -1029,7 +1034,7 @@ footer {
   }
 }
 
-@media (width <= 1100px) {
+@media (width <=1100px) {
   .grid-four--cols {
     grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   }
@@ -1045,6 +1050,7 @@ footer {
     & .choose-left-div {
       order: 2;
     }
+
     & .choose-center-div {
       order: 1;
 
@@ -1062,6 +1068,7 @@ footer {
         display: none;
       }
     }
+
     & .choose-right-div {
       order: 3;
     }
@@ -1077,9 +1084,9 @@ footer {
   }
 }
 
-@media (width <= 980px) {
+@media (width <=980px) {
   body {
-    padding: 0 0.6rem;
+    /* padding: 0 0.6rem; */
   }
 
   .section-products #productContainer {
@@ -1123,6 +1130,7 @@ footer {
   .section-hero .section-hero-image {
     display: grid;
     place-items: center;
+
     & figure {
       display: grid;
       place-items: center;
@@ -1139,7 +1147,7 @@ footer {
   }
 }
 
-@media (width <= 768px) {
+@media (width <=768px) {
   .grid-two--cols {
     grid-template-columns: 1fr;
   }
@@ -1219,6 +1227,7 @@ footer {
     padding: 6.4rem 0rem 2.4rem 0rem;
   }
 }
+
 /***** End  media queries Section *****/
 
 
