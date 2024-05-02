@@ -15,7 +15,7 @@ getBillFromLocalStorage();
 // fetch data from localStorage
 const localStorageData = getCartProductFromLs();
 // show no. length of the data to navbar
-document.querySelector(".fa-cart-shopping").innerText = " " + localStorageData.length;
+document.querySelector(".fa-cart-shopping").innerText = localStorageData.length;
 
 
 // console.log("local storage : ",localStorageData);

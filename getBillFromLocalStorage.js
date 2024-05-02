@@ -9,7 +9,7 @@ export const getBillFromLocalStorage=()=>{
     
     fetchFromLs=getCartProductFromLs();
     fetchFromLs.forEach((ele)=>sum+=ele.price);
-    BillProd.innerText=Number(sum);
+    BillProd.innerText=Number(sum.toFixed(2));
     finalBillProd.textContent=Number((sum+sum*(0.18)).toFixed(2));
     return;
 }
